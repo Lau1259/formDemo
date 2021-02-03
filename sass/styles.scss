@@ -1,0 +1,82 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  border: 0.35em inset;
+  border-radius: 2em;
+  background-color: #222222;
+  min-width: 60vw;
+  padding: 2em;
+  animation: colors 5s infinite ease;
+  legend {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    margin-bottom: 1em;
+  }
+  p {
+    margin: 0;
+  }
+  label {
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 0.5em 0;
+    font-size: 2em;
+  }
+  input {
+    display: block;
+    width: 100%;
+    font-size: 1.5em;
+  }
+  [type="submit"] {
+    margin-top: 1em;
+    background-color: rgb(14, 179, 179);
+    border: none;
+    border-radius: 2em;
+    transition: 0.35s;
+    font-weight: 800;
+    &:hover {
+      background-color: rgb(103, 216, 141);
+    }
+  }
+}
+
+main {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(#30c730, #5adac6, #3da9ca);
+}
+
+.welcome {
+  background-color: #222222;
+  color: white;
+  padding: 2em;
+  border-radius: 2em;
+}
+
+@keyframes colors {
+  0% {
+    border-color: rgb(143, 223, 40);
+  }
+  20% {
+    border-color: rgb(223, 180, 40);
+  }
+  40% {
+    border-color: rgb(223, 92, 40);
+  }
+  60% {
+    border-color: rgb(223, 40, 40);
+  }
+  80% {
+    border-color: rgb(223, 40, 147);
+  }
+  1000% {
+    border-color: rgb(143, 223, 40);
+  }
+}
